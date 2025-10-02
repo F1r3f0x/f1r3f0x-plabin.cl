@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C:\Users\plabin</title>
+    <link rel="icon" type="image/x-icon" href="icons/png/script_file_teal-1.png">
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <style>
+        /* --- General Layout --- */
+        body {
+            background-color: #008080;  /* Classic Windows Teal */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .main-window {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 32px;
+        }
+
+        .window-content {
+            padding: 0.8rem;
+        }
+
+        /* --- Title Bar --- */
+        .title-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title-bar-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .title-bar-icon {
+            padding-right: 4px;
+        }
+        
+        /* --- Spacing & Sections --- */
+        .section-spacing {
+            margin-top: 1rem;
+        }
+
+        /* --- Components & Elements --- */
+        .menu-bar {
+            display: flex;
+        }
+
+        .menu-bar-item {
+            padding-right: 10px;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+
+        .tree-view a {
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+
+        .tree-view a:focus {
+            outline: 1px dotted #000000;
+        }
+
+        .tree-view a:hover {
+            background-color: #000080;
+            color: white;
+        }
+
+        .social-links a {
+            margin-right: 15px;
+        }
+
+        .email-button {
+            margin-top: 10px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        /* --- Typography --- */
+        h1 {
+            font-size: 2.6rem;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="window main-window">
+        <div class="title-bar">
+            <div class="title-bar-left">
+                <div class="title-bar-icon"><img src="icons/png/computer_taskmgr-1.png" alt=""></div>
+                <div class="title-bar-text">Patricio Labin C. - Software Developer</div>
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+
+        <div class="window-body">
+            <div class="menu-bar">
+                <div class="menu-bar-item"><u>F</u>ile</div>
+                <div class="menu-bar-item"><u>E</u>dit</div>
+                <div class="menu-bar-item"><u>A</u>bout</div>
+                <div class="menu-bar-item"><u>H</u>elp</div>
+            </div>
+
+            <div class="window-content">
+                <h1>Welcome to my personal website! <img src="icons/png/world-3.png" alt=""></h1>
+                <p>Hi, I'm Patricio, a software developer based in Chile that likes to build weird things.</p>
+                <p>I specialize in Salesforce, Python and Java. I also like to make (but not finish) games.</p>
+
+                <fieldset class="fieldset">
+                    <legend>
+                        <img src="icons/png/directory_open_file_mydocs-5.png" class="icon" alt="Folder Icon">
+                        My Dumb Projects
+                    </legend>
+                    <div class="tree-view">
+                        <ul>
+                            <li>
+                                <details open>
+                                    <summary>Web Applications</summary>
+                                    <ul>
+                                        <li><a href="https://github.com/F1r3f0x/project_snitch" target="_blank">Project Snitch - Flask (Final uni project)</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details open>
+                                    <summary>Desktop Tools</summary>
+                                    <ul>
+                                        <li><a href="https://github.com/F1r3f0x/salesforce_profileMergerTool" target="_blank">salesforce_profileMergerTool - Tool to merge Saleforce Profiles</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details open>
+                                    <summary>Scripts / CMD Tools</summary>
+                                    <ul>
+                                        <li><a href="https://github.com/F1r3f0x/Xl_to_SQL" target="_blank">Xl_to_SQL - Script to convert Excel to SQL Inserts</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="https://github.com/F1r3f0x/AzureDevOpsPRChangesLogger" target="_blank">AzureDevOpsPRChangesLogger - Script to obtain all files changed in a PR</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="https://github.com/F1r3f0x/AzureDevOps_ByPassedPRs" target="_blank">AzureDevOps_ByPassedPRs - Script to obtain all by passed PRs <b>(don't ask)</b></a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details open>
+                                    <summary>Electronics</summary>
+                                    <ul>
+                                        <li><a href="github.com/F1r3f0x/Python3-terminal_car_controller" target="_blank">Terminal Car Controller - Curses program to control a little raspberry pi powered car</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Games</summary>
+                                    <ul>
+                                        <li><a href="https://github.com/F1r3f0x/pygame-minesweeperclone" target="_blank">Pygame Minesweeper - Basic Minesweeper Clone</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="https://github.com/F1r3f0x/Godot4-FPSProject" target="_blank">Godot4 FPS Project - Quake movement implementation on Godot</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="https://github.com/F1r3f0x/Godot4-FPSProject" target="_blank">Godot4 FPS Project - Quake movement implementation on Godot</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="https://github.com/F1r3f0x/Godot3-CloneBreakout" target="_blank">Godot4 Breakout Clone - Simple breakout clone on Godot</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                        </ul>
+                    </div>
+                </fieldset>
+
+                <fieldset class="fieldset section-spacing">
+                    <p>This little bad boy is also my personal server.</p>
+
+                    <legend>
+                        <img src="icons/png/network_normal_two_pcs-4.png" class="icon" alt="Network Icon">
+                        Quick Server Links
+                    </legend>
+                    <div class="tree-view">
+                        <ul>
+                            <li><a href="https://admin.plabin.cl" target="_blank">Webmin</a></li>
+                            <li><a href="https://plabin.cl/transmission/web" target="_blank">Transmission Web UI</a>
+                            </li>
+                            <li><a href="https://cloud.plabin.cl" target="_blank">Personal Cloud</a></li>
+                        </ul>
+                    </div>
+                </fieldset>
+
+                <fieldset class="fieldset section-spacing">
+                    <legend>
+                        <img src="https://win98icons.alexmeub.com/icons/png/msagent-2.png" class="icon" alt="User Icon">
+                        Contact
+                    </legend>
+                    <p>I'm always open to new opportunities. You can find me here:</p>
+                    <div class="social-links">
+                        <a href="https://github.com/F1r3f0x" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/plabin/" target="_blank">LinkedIn</a>
+                        <a href="https://www.salesforce.com/trailblazer/plabin" target="_blank">Trailhead</a>
+                    </div>
+                    <a href="mailto:plabin@outlook.cl">
+                        <button class="email-button">
+                            <img src="https://win98icons.alexmeub.com/icons/png/outlook_express-5.png" class="icon" alt="Email Icon">
+                            Email Me
+                        </button>
+                    </a>
+                </fieldset>
+
+            </div>
+
+            <div class="status-bar">
+                <p class="status-bar-field">Press F1 for help</p>
+                <p class="status-bar-field" id="live-time"></p>
+                <p class="status-bar-field" id="cpu-usage"></p>
+                <p class="status-bar-field"><a href="https://jdan.github.io/98.css/" target="_blank">Made with 98.css</a></p>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const timeElement = document.getElementById('live-time');
+            const cpuElement = document.getElementById('cpu-usage');
+
+            // Function to update the clock
+            function updateClock() {
+                const now = new Date();
+                let hours = now.getHours();
+                const minutes = now.getMinutes().toString().padStart(2, '0');
+                const ampm = hours >= 12 ? 'PM' : 'AM';
+
+                hours = hours % 12;
+                hours = hours ? hours : 12; // Handle midnight (0) as 12
+
+                timeElement.textContent = `Time: ${hours}:${minutes} ${ampm}`;
+            }
+
+            // Function to update the "CPU usage"
+            function updateCpuUsage() {
+                const randomNumber = Math.floor(Math.random() * (25 - 5 + 1)) + 5; // Random number between 5 and 25
+                cpuElement.textContent = `CPU Usage: ${randomNumber}%`;
+            }
+
+            // Update immediately and then set intervals
+            updateClock();
+            updateCpuUsage();
+            setInterval(updateClock, 1000); // Update time every second
+            setInterval(updateCpuUsage, 3000); // Update CPU every 3 seconds
+        });
+    </script>
+
+</body>
+
+</html>
